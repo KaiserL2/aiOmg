@@ -2,11 +2,18 @@
 
 import Logo from '@/components/Logo';
 import { useChat } from 'ai/react';
+import Head from 'next/head';
 
 export default function Chat() {
-  const { messages, input, handleInputChange, handleSubmit, stop, isLoading } = useChat();
+  const { messages, input, handleInputChange, handleSubmit } = useChat();
 
   return (
+
+    <>
+    <Head>
+      <title>Chatapp</title>
+      <link rel="icon" href="/logo.png" />
+    </Head>
     <div className='pt-4 pb-32'>
 
       {messages.map(message=>{
@@ -29,5 +36,6 @@ export default function Chat() {
       </form>
 
     </div>
+    </>
   );
 }
