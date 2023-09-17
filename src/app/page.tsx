@@ -2,7 +2,6 @@
 
 import Logo from '@/components/Logo';
 import { useChat } from 'ai/react';
-import Head from 'next/head';
 
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();

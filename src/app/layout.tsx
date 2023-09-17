@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Chatapp',
   description: 'balbalblalbalba',
-  icons:"/logo.png"
+  icons:"/public/logo.png"
 }
 
 export default function RootLayout({
