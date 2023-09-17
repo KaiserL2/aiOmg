@@ -10,10 +10,7 @@ export default function Chat() {
   return (
 
     <>
-    <Head>
-      <title>Chatapp</title>
-      <link rel="icon" href="/logo.png" />
-    </Head>
+
     <div className='pt-4 pb-32'>
 
       {messages.map(message=>{
